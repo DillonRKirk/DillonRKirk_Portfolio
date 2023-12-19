@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+            <title></title>
+
+        <!--custom stylesheet-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--external stylesheets-->
+        <link rel="stylesheet" href="lib/scrollmap.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+        <div class="content">
+             <!--title block, background image is title image-->
+            <div class="row" style="background-image:url(assets/AztecSacrifice.png);
+            background-size:contain; background-repeat:no-repeat">
+                <div class="right title">
+                    <!--title text-->
+                    <h1>Homicide Rates as Huītzilōpōchtli</h1>
+                    <!--subtitle or author-->
+                    <p class="right">Dillon Kirk</p>
+                </div>
+            </div>
+            <!--side by side text and image-->
+            <div class="row">
+                <div class="left">
+                    <img class="fit" src="assets/WorldBankHomicideStatistics.jpg">
+                </div>
+                <div class="right">
+                    <p class="vert-center">Mexico is a developing nation-state best known for its rich cultural history, delicious cuisine, and exquisite vacation destinations. 
+                        However, Mexico has been plagued by exploding homicide rates since President Felipe Calderón declared war on narcoterrorism in 2006. 
+                        While global averages of homicides per 100,000 residents have averaged between 5.4 and 7.0 from 2000 to 2020 (World Bank, see left), 
+                        several of Mexico’s cities have seen greater than 100 homicides per 100,000 residents during the same time period. 
+                        While one can argue that Mexico’s exploding homicide rates can be attributed to its war on narcoterrorism, one can also argue that certain cultural factors facilitate its rise.</p>
+                </div>
+            </div>
+            <!--side by side text and image-->
+            <div class="row">
+                <div class="left">
+                    <img class="fit" src="assets/LaSantaMuerte.jpg">
+                </div>
+                <div class="right">
+                    <p class="vert-center">Compared to its peers, Mexican culture has a unique historical relationship with the concept of death and sacrifice. 
+                        The Aztec Empire’s embrace of human sacrifice is perhaps highlighted most notably by Huītzilōpōchtli, the Aztec war deity of sacrifice. 
+                        Ceremonial human sacrifices to Huītzilōpōchtli were common occurrences in Aztec society, and Huītzilōpōchtli was featured in nearly every Aztec pantheon (Meehan 2022). 
+                        More on Huītzilōpōchtli can be found <a href=https://www.youtube.com/watch?v=2_jUZ5kzF_M>here.</a>
+                        Modern Mexicans still embrace the indigenous holiday of Day of the Dead, in which participants place offerings atop alters for spirits visiting our world (Ward 2022). 
+                        A rise in neopaganism has accompanied Mexican narcoterrorism, perhaps best highlighted by the rise of La Santa Muerte (Holy Death, see left). 
+                        According to some estimates, La Santa Muerte has courted approximately 12 million followers (Tucker 2017), some of which conduct offerings of animal and human sacrifice (Bunker 2013).</p>
+                </div>
+            </div>
+            <!--side by side text and image-->
+            <div class="row">
+                <div class="left">
+                    <img class="fit" src="assets/Huitzilopochtli.png">
+                </div>
+                <div class="right">
+                    <p class="vert-center">Because of Mexico’s unique historical relationship with the concept of death and sacrifice, I chose to represent Mexico’s intentional homicide rates in a Huītzilōpōchtli theme. <br>
+                        <br>Water is represented as a turquoise color with RGB of (39, 135, 137). <br>
+                        <br>Land is represented in a green color with RGB of (44, 76, 59). <br>
+                        <br>Hillshade is represented as a brown color with RGB of (139, 69, 19). <br>
+                        <br>Road networks are represented as an orange color with RGB of (255, 129, 0). <br>
+                        <br>Administrative boundaries are represented with a solid white line, regional boundaries are represented with dashed white lines, and disputed boundaries are represented with dashed yellow lines (RGB of 255, 201, 33). <br>
+                        <br>Lastly, fonts are written in the Nosifer style, which is a blood-dripping style, in either white for natural point labels or blood red for place labels (RGB of 227, 26, 28).</p>
+                </div>
+            </div>
+
+            <!--background images with text scrolling over them (sidecar)-->
+            <div class="scroll-container">    
+                <!--background images-->
+                <div class="background-item">
+                    <img src="assets/Yucatan2022.png" data-slide="1" class="fill">
+                    <img src="assets/Tijuana2021.png" data-slide="2" class="fill hidden">
+                    <img src="assets/CentralMexico2020.png" data-slide="3" class="fill hidden">
+                    <img src="assets/Guerrero2015.png" data-slide="4" class="fill hidden">
+                </div>
+                <!--foreground text blocks-->
+                <div class="foreground-item">
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">2022 homicide rates for Mexico's Yucatán Peninsula (a frequented global tourist destination) are stylized as such. <br>
+                                <br>As a developing nation, official published homicide statistics are far from complete (note that Cancun is absent). <br>
+                                <br>Any missing data (either population or total homicides) are represented as 0s on my maps.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">2021 homicide rates for Mexico's northwestern cities are stylized as such. <br>
+                            <br>Tijuana, Mexico is approximately 20 miles south of San Diego, California.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">2020 homicide rates for Central Mexican are stylized as such. <br>
+                            <br>Note that the highest homicide rate in my dataset was for 2020 was Salamanca, Mexico at 281.923 homicides per 100,000 residents.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Finally, here's a look at Guerrero State in 2015.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!--slideshow content goes here-->
+                        <div class="slide">
+                            <img src="assets/Mexico2022.png">
+                            <p class="caption">A zoomed-out view of Mexican homicide rates in 2022.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/Baja2022.png">
+                            <p class="caption">A mid-scale view centered on Baja California, Mexico.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/BajaIsthmus2022.png">
+                            <p class="caption">A large-scale view of the Baja California isthmus.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/Cabo2022.png">
+                            <p class="caption">Cabo San Lucas, Mexico.</p>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+
+                        <!-- The dots/circles -->
+                        <div class="slideshow-dots">
+                            <span class="dot" id="1"></span>
+                            <span class="dot" id="2"></span>
+                            <span class="dot" id="3"></span>
+                            <span class="dot" id="4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <iframe class="fit" src="https://api.mapbox.com/styles/v1/dillonrkirk/clp5yxsj6011z01nt6fbz1j8q.html?title=view&access_token=pk.eyJ1IjoiZGlsbG9ucmtpcmsiLCJhIjoiY2xvdTdpdHp2MDhwZTJpcG53dXRieW95ZSJ9.onxJfjzSIBw53eV1gp6hJg&zoomwheel=true&fresh=true#4.58/23.29/-99.7"></iframe>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <iframe class="fit" src=https://api.mapbox.com/styles/v1/dillonrkirk/clp7233gv012q01ns64dh71iq.html?title=view&access_token=pk.eyJ1IjoiZGlsbG9ucmtpcmsiLCJhIjoiY2xvdTdpdHp2MDhwZTJpcG53dXRieW95ZSJ9.onxJfjzSIBw53eV1gp6hJg&zoomwheel=true&fresh=true#4.58/23.29/-99.7></iframe>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <iframe class="fit" src=https://api.mapbox.com/styles/v1/dillonrkirk/clp72awok010401qob1j5aj8m.html?title=view&access_token=pk.eyJ1IjoiZGlsbG9ucmtpcmsiLCJhIjoiY2xvdTdpdHp2MDhwZTJpcG53dXRieW95ZSJ9.onxJfjzSIBw53eV1gp6hJg&zoomwheel=true&fresh=true#4.58/23.29/-99.7></iframe>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <iframe class="fit" src=https://api.mapbox.com/styles/v1/dillonrkirk/clp72hjw700wm01qd7oyhakxd.html?title=view&access_token=pk.eyJ1IjoiZGlsbG9ucmtpcmsiLCJhIjoiY2xvdTdpdHp2MDhwZTJpcG53dXRieW95ZSJ9.onxJfjzSIBw53eV1gp6hJg&zoomwheel=true&fresh=true#4.58/23.29/-99.7></iframe>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <iframe class="fit" src=https://api.mapbox.com/styles/v1/dillonrkirk/clp72qdci00wt01nweqw73vx8.html?title=view&access_token=pk.eyJ1IjoiZGlsbG9ucmtpcmsiLCJhIjoiY2xvdTdpdHp2MDhwZTJpcG53dXRieW95ZSJ9.onxJfjzSIBw53eV1gp6hJg&zoomwheel=true&fresh=true#4.58/23.29/-99.7></iframe>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <iframe class="fit" src=https://api.mapbox.com/styles/v1/dillonrkirk/clp72x5y700wv01nwap4vd1ll.html?title=view&access_token=pk.eyJ1IjoiZGlsbG9ucmtpcmsiLCJhIjoiY2xvdTdpdHp2MDhwZTJpcG53dXRieW95ZSJ9.onxJfjzSIBw53eV1gp6hJg&zoomwheel=true&fresh=true#4.58/23.29/-99.7></iframe>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <iframe class="fit" src=https://api.mapbox.com/styles/v1/dillonrkirk/clp732lmr012701qn46mz4nc5.html?title=view&access_token=pk.eyJ1IjoiZGlsbG9ucmtpcmsiLCJhIjoiY2xvdTdpdHp2MDhwZTJpcG53dXRieW95ZSJ9.onxJfjzSIBw53eV1gp6hJg&zoomwheel=true&fresh=true#4.58/23.29/-99.7></iframe>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <iframe class="fit" src=https://api.mapbox.com/styles/v1/dillonrkirk/clp73kzu0013h01qs0lyu22fa.html?title=view&access_token=pk.eyJ1IjoiZGlsbG9ucmtpcmsiLCJhIjoiY2xvdTdpdHp2MDhwZTJpcG53dXRieW95ZSJ9.onxJfjzSIBw53eV1gp6hJg&zoomwheel=true&fresh=true#4.58/23.29/-99.7></iframe>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <iframe class="fit" src=https://api.mapbox.com/styles/v1/dillonrkirk/clp73yiuu010901qo5aqc0bpz.html?title=view&access_token=pk.eyJ1IjoiZGlsbG9ucmtpcmsiLCJhIjoiY2xvdTdpdHp2MDhwZTJpcG53dXRieW95ZSJ9.onxJfjzSIBw53eV1gp6hJg&zoomwheel=true&fresh=true#4.58/23.29/-99.7></iframe>
+                </div>
+            </div>
+
+            <!--credits-->
+            <div class="row no-margin">
+                <div class="center">
+                    <div class="credits">
+                        <p><b>Credits:</b></p>
+                        <p>Maps created with Mapbox Studio</p>
+                        <p>Data from openstreetmap</p>
+                        <p>Meehan, E. (2022, November 29). Aztec God Huitzilopochtli. Retrieved from Mythopedia: <a href=https://mythopedia.com/topics/huitzilopochtli>https://mythopedia.com/topics/huitzilopochtli</a></p>
+                        <p>National Institute of Statistics and Geography. (n.d.). Conjunto de datos: Defunciones por homicidios. Retrieved from INEGI: <a href=https://www.inegi.org.mx/sistemas/olap/proyectos/bd/continuas/mortalidad/defuncioneshom.asp?s=est&c=28820&proy=mortgral_dh>https://www.inegi.org.mx/sistemas/olap/proyectos/bd/continuas/mortalidad/defuncioneshom.asp?s=est&c=28820&proy=mortgral_dh</a></p>
+                        <p>Pantheon Mythology. (2023, January 9). Huitzilopochtli - The Aztec God of War, The Sun and Human Sacrifice | Pantheon Mythology. Retrieved from YouTube: <a href=https://www.youtube.com/watch?v=2_jUZ5kzF_M>https://www.youtube.com/watch?v=2_jUZ5kzF_M</a></p>
+                        <p>Robert J. Bunker, Ph. D. (2013, February 5). Santa Muerte: Inspired and Ritualistic Killings. Retrieved from FBI Articles: <a href=https://leb.fbi.gov/articles/featured-articles/santa-muerte-inspired-and-ritualistic-killings>https://leb.fbi.gov/articles/featured-articles/santa-muerte-inspired-and-ritualistic-killings</a></p>
+                        <p>The World Bank. (2017, July 24). Urban Cities in Mexico. Retrieved from Data Catalog: <a href=https://datacatalog.worldbank.org/search/dataset/0041717>https://datacatalog.worldbank.org/search/dataset/0041717</a></p>
+                        <p>The World Bank. (n.d.). Intentional homicides (per 100,000 people). Retrieved from The World Bank Data: <a href=https://data.worldbank.org/indicator/VC.IHR.PSRC.P5>https://data.worldbank.org/indicator/VC.IHR.PSRC.P5</a></p>
+                        <p>Tucker, D. (2017, October 31). Santa Muerte: The rise of Mexico’s death 'saint'. Retrieved from British Broadcasting Corporation: <a href=https://www.bbc.com/news/world-latin-america-41804243>https://www.bbc.com/news/world-latin-america-41804243</a></p>
+                        <p>United Nations Office on Drugs and Crime. (n.d.). dataUNODC. Retrieved from Victims of Intentional Homicide: <a href=https://dataunodc.un.org/sites/dataunodc.un.org/files/data_cts_intentional_homicide.xlsx>https://dataunodc.un.org/sites/dataunodc.un.org/files/data_cts_intentional_homicide.xlsx</a></p>
+                        <p>United Nations Statistics Division. (2023, September 13). City population by sex, city and city type. Retrieved from UN Data: <a href=https://data.un.org/Data.aspx?q=mexico+city&d=POP&f=tableCode%3A240%3BcountryCode%3A484>https://data.un.org/Data.aspx?q=mexico+city&d=POP&f=tableCode%3A240%3BcountryCode%3A484/<a></p>
+                        <p>Ward, L. (2022, October 14). Top 10 things to know about the Day of the Dead. Retrieved from National Geographic: <a href=https://www.nationalgeographic.com/culture/article/top-ten-day-of-dead-mexico>https://www.nationalgeographic.com/culture/article/top-ten-day-of-dead-mexico</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--external scripts-->
+        <script type="text/javascript" src="lib/scrollmap.js"></script>
+    </body>
+</html>
